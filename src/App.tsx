@@ -1,7 +1,8 @@
 /**
  * Aplikasi Website Tes Sumatif
- * SEKOLAH DASAR - JEMBRANA - KELAS VI
- * Mata Pelajaran: MATEMATIKA (TKA)
+ * SDN 3 Loloan Timur - Kelas VI
+ * Mata Pelajaran: PJOK (Pendidikan Jasmani, Olahraga, dan Kesehatan)
+ * Materi: Gerak Dasar Lokomotor dan Nonlokomotor
  */
 
 import React, { useState, useEffect } from 'react';
@@ -15,7 +16,7 @@ import { Stage3Result } from './components/Stage3Result';
 import { Stage4TeacherPanel } from './components/Stage4TeacherPanel';
 import { TeacherAuthModal } from './components/TeacherAuthModal';
 
-const STORAGE_QUESTIONS_KEY = 'sd3_loloan_timur_questions_v2';
+const STORAGE_QUESTIONS_KEY = 'sd3_loloan_timur_pjok_questions_v1';
 const STORAGE_ALLOW_REVIEW_KEY = 'sd3_loloan_timur_allow_review';
 
 export default function App() {

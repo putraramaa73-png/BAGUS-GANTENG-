@@ -3,6 +3,7 @@ import confetti from 'canvas-confetti';
 import { CONFIG } from '../config';
 import { ExamResult, Question } from '../types';
 import { downloadStudentResultPDF } from '../utils/pdfGenerator';
+import { QuestionIllustration } from './QuestionIllustration';
 import {
   Award,
   CheckCircle2,
@@ -151,7 +152,7 @@ export const Stage3Result: React.FC<Stage3ResultProps> = ({
               Data Anda telah tersinkronisasi ke Google Spreadsheet sekolah.
             </p>
             <p className="mt-0.5 text-blue-800">
-              Anda dapat mengunduh lembar hasil tes resmi dalam bentuk PDF di bawah ini. Lembar ini memuat kolom tanda tangan resmi Guru Kelas VI ({CONFIG.GURU}) dan Orang Tua/Wali Murid.
+              Anda dapat mengunduh lembar hasil tes resmi dalam bentuk PDF di bawah ini. Lembar ini memuat kolom tanda tangan resmi Guru Pengampu ({CONFIG.GURU}) dan Orang Tua/Wali Murid.
             </p>
           </div>
         </div>
@@ -204,6 +205,9 @@ export const Stage3Result: React.FC<Stage3ResultProps> = ({
                       Kunci: {Array.isArray(q.correctAnswer) ? q.correctAnswer.join(', ') : q.correctAnswer || 'Sesuai Kategori'}
                     </span>
                   </div>
+                  {q.image && (
+                    <QuestionIllustration imageKey={q.image} caption={q.imageCaption} />
+                  )}
                   <p className="text-slate-800">{q.text}</p>
                   <div className="p-2.5 rounded bg-blue-50/70 border border-blue-100 text-slate-700">
                     <span className="font-bold text-blue-900 block mb-0.5">Pembahasan:</span>

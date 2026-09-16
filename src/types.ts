@@ -32,6 +32,8 @@ export interface Question {
   id: number;
   type: QuestionType;
   text: string;
+  image?: string; // ID ilustrasi grafis / URL gambar penunjang soal
+  imageCaption?: string; // Keterangan / caption gambar
   options?: OptionItem[]; // Untuk 'pg' (4 opsi) dan 'pgk' (3 opsi)
   statements?: StatementItem[]; // Untuk 'pgk_kategori' (3 pernyataan)
   correctAnswer?: string | string[]; // string untuk 'pg' (e.g. 'B'), array untuk 'pgk' (e.g. ['A', 'C'])

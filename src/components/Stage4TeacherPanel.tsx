@@ -747,10 +747,10 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-100 gap-3">
             <div>
               <h3 className="text-base font-bold text-slate-900">
-                Struktur &amp; Bank Soal Matematika TKA ({questions.length} Butir)
+                Struktur &amp; Bank Soal {CONFIG.MATA_PELAJARAN} ({questions.length} Butir)
               </h3>
               <p className="text-xs text-slate-500">
-                18 Soal Pilihan Ganda, 3 Soal Pilihan Ganda Kompleks, 9 Soal PGK Kategori
+                Materi: {CONFIG.MATERI} • 18 Soal Pilihan Ganda, 3 PGK, 9 PGK Kategori
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2">

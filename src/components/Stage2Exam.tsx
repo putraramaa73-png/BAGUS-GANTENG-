@@ -10,6 +10,7 @@ import {
 } from '../types';
 import { gasService } from '../services/gasService';
 import { downloadExamQuestionsPDF } from '../utils/pdfGenerator';
+import { QuestionIllustration } from './QuestionIllustration';
 import {
   ChevronLeft,
   ChevronRight,
@@ -371,6 +372,14 @@ export const Stage2Exam: React.FC<Stage2ExamProps> = ({
                 {currentQ.type === 'pgk' && 'Pilihlah seluruh pernyataan yang bernilai benar (bisa lebih dari satu).'}
                 {currentQ.type === 'pgk_kategori' && 'Tentukan pilihan Benar atau Salah untuk setiap pernyataan di bawah ini.'}
               </div>
+
+              {/* Gambar / Ilustrasi Grafis Penunjang Soal PJOK */}
+              {currentQ.image && (
+                <QuestionIllustration
+                  imageKey={currentQ.image}
+                  caption={currentQ.imageCaption}
+                />
+              )}
 
               {/* Teks Soal */}
               <div className="text-sm sm:text-base text-slate-900 leading-relaxed font-medium whitespace-pre-line mb-6">

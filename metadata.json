@@ -1,6 +1,6 @@
 {
-  "name": "Remix Tes Sumatif ",
-  "description": "Aplikasi Tes Sumatif Matematika TKA Kelas VI SD Negeri 3 Loloan Timur dengan 4 tahap tes, sinkronisasi Google Spreadsheet, unduh PDF naskah \u0026 hasil tes, serta panel guru.",
+  "name": "Tes Sumatif PJOK Kelas VI",
+  "description": "Aplikasi Tes Sumatif PJOK Kelas VI SDN 3 Loloan Timur dengan lingkup materi Gerak Lokomotor dan Nonlokomotor, dilengkapi gambar ilustrasi gerakan, sinkronisasi Google Spreadsheet, unduh PDF naskah & hasil tes, serta panel guru.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

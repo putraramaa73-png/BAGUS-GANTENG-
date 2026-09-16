@@ -4,16 +4,17 @@
  */
 
 export const CONFIG = {
-  SEKOLAH: "SEKOLAH DASAR",
-  ALAMAT_SEKOLAH: "Jembrana",
+  SEKOLAH: "SDN 3 Loloan Timur",
+  ALAMAT_SEKOLAH: "Loloan Timur, Kec. Negara, Kab. Jembrana, Bali",
   KOTA: "Jembrana",
   KELAS: "VI",
-  MATA_PELAJARAN: "MATEMATIKA",
-  MATERI: "TKA (Tes Kemampuan Akademik)",
-  GURU: "........................................",
-  NIP_GURU: "........................................",
-  KEPALA_SEKOLAH: "........................................",
-  NIP_KEPALA_SEKOLAH: "........................................",
+  MATA_PELAJARAN: "PJOK",
+  MATERI: "Gerak Dasar Lokomotor & Nonlokomotor",
+  GURU: "Bagus Ratman Syahputra, S.Pd.",
+  NIP_GURU: "199425082023211006",
+  NIPPK_GURU: "199425082023211006",
+  KEPALA_SEKOLAH: "Susilo Fitri Yatmoko, S.Pd., M.Pd.",
+  NIP_KEPALA_SEKOLAH: "-",
   KKTP: 70,
   ADMIN_PASSWORD: "GURUADMIN",
   
